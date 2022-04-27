@@ -1,0 +1,2 @@
+Bios
+| summarize dcount( Device ) by SMBIOSBIOSVersion

@@ -1,0 +1,3 @@
+InstalledSoftware
+| where ProductName like '%FireFox%'
+| summarize count() by ProductVersion

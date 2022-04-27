@@ -1,0 +1,4 @@
+file('%SystemDrive%\users\*\AppData\Local\Google\Chrome\Application\chrome.exe')
+| summarize count() by Version
+| order by version
+| render columnchart with(title='Chrome User versions', ytitle='Count')

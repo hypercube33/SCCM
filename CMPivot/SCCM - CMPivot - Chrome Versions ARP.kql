@@ -1,0 +1,4 @@
+InstalledSoftware
+| where (ProductName == 'Google Chrome')
+| summarize dcount ( Device ) by ProductVersion
+| render barchart

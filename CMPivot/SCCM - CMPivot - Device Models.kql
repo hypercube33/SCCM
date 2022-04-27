@@ -1,0 +1,4 @@
+Device
+| summarize dcount( Device ) by Model
+| order by dcount_ asc
+| render barchart
